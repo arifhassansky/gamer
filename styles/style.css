@@ -139,7 +139,13 @@ nav {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.card-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
 .card-item {
+  pointer-events: auto;
   position: relative;
   max-width: 342px;
 }
@@ -151,11 +157,7 @@ nav {
   font-weight: 500;
   margin-top: 24px;
 }
-.card-items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
+
 .watch h5,
 i {
   font-size: 20px;
@@ -168,6 +170,7 @@ i {
   top: 35%;
   left: 27%;
   display: none;
+  pointer-events: none;
 }
 .card-item img:hover {
   filter: brightness(30%);
